@@ -10,7 +10,12 @@ namespace System.Activities
     // match.  We'll log the error at cache metadata time.
     public class ActivityWithResultWrapper<T> : CodeActivity<T>, Argument.IExpressionWrapper
     {
+        
         private readonly ActivityWithResult expression;
+
+        public ActivityWithResultWrapper()
+        {
+        }
 
         public ActivityWithResultWrapper(ActivityWithResult expression)
         {
