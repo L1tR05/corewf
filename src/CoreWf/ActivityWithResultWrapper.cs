@@ -8,7 +8,7 @@ namespace System.Activities
     // This wrapper is used to make our "new Expression" and "new Default" APIs
     // work correctly even if the expression set on the base class doesn't
     // match.  We'll log the error at cache metadata time.
-    internal class ActivityWithResultWrapper<T> : CodeActivity<T>, Argument.IExpressionWrapper
+    public class ActivityWithResultWrapper<T> : CodeActivity<T>, Argument.IExpressionWrapper
     {
         private readonly ActivityWithResult expression;
 
